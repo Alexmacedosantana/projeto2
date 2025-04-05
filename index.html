@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Média de notas</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="title">
+    <h2>Média de notas</h2>
+    </div>
+    
+    <!--inicio dos inputs-->
+    <label> Primeira nota:</label>
+    <input type="number" id="n1" min="0" max="10"/>
+
+    <label> Segunda nota:</label>
+    <input type="number" id="n2" min="0" max="10"/>
+
+    <label> terceira nota:</label>
+    <input  type="number" id="n3" min="0" max="10"/>
+
+    <label> Quarta nota:</label>
+      <input type="number" id="n4" min="0" max="10"/>
+
+      <!--Botaõ de media-->
+      <div>
+    <button onclick=" calculaMedia (n1, n2, n3, n4)">Média</button>
+    </div>
+    <p id="resultado"></p>
+  </div>
+
+   <!-- Mensagem de aprovação/reprovação -->
+   <div id="mensagem">
+    <span id="textoMensagem"></span>
+    <button onclick="fecharMensagem()">x</button>
+  </div>
+  
+   <script src="scrip.js"></script>
+  </body>
+</html>

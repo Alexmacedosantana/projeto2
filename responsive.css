@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    position: static;
+    width: 70%; /* Diminui a largura */
+    padding: 15px;
+    height: auto;
+    margin: 0 auto; /* Garante centralização horizontal */
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  #mensagem {
+    width: 70%; /* Mesma largura da container, pra acompanhar o estilo */
+    transform: none;
+    margin: 20px auto 0; /* Centraliza e afasta do topo */
+   
+  }
+
+  #mensagem button {
+    font-size: 14px;
+    transform: translate(-10%, +20%);
+  }
+}
